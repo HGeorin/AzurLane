@@ -1692,7 +1692,7 @@
 	focus = {  
 		id = BFL_beiliandejianshizhe
 		icon = GFX_focus_luoxiya2
-		x = 38
+		x = 46
 		y = 0
 		
 		cost = 10
@@ -1711,6 +1711,12 @@
 				add_unit_leader_trait = politically_connected
 				gain_xp = 600
 			}
+		}
+		offset = {
+			trigger = {
+				has_global_flag = MOD_azurlane_sairenzhizai
+			}
+			x = -7
 		}
 	}
 	focus = {  
@@ -3586,10 +3592,10 @@
 	focus = {  
 		id = BFL_xiangyouzhuan
 		icon = GFX_goal_generic_war_with_comintern
-		x = 8
+		x = 12
 		y = 0
-		relative_position_id = BFL_12
-		mutually_exclusive = { focus = BFL_12 }
+		relative_position_id = BFL_beiliandejianshizhe
+		mutually_exclusive = { focus = BFL_beiliandejianshizhe }
 		available = {
 			not = { has_completed_focus = BFL_kongjunjianshe }
 			not = { has_completed_focus = BFL_lujunjianshe }

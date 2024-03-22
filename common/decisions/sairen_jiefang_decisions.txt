@@ -954,17 +954,20 @@ jiefanglingtu_category = {
 			}
 			modifier = {
 				tag = TIX
-				SIR = {
-					NOT = { controls_state = 219 }
-					NOT = { controls_state = 398 }
-				}	
+				TIX = {
+					controls_state = 219
+					controls_state = 398
+				}
 				add = 10
 			}
 			modifier = {
 				tag = BFL
-				SIR = {
-					NOT = { controls_state = 219 }
-					NOT = { controls_state = 398 }
+				AND = {
+					BFL = {
+						controls_state = 219
+						controls_state = 398
+					}
+					has_completed_focus = BFL_wulaergongshi
 				}
 				add = 10
 			}

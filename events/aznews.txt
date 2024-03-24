@@ -687,8 +687,8 @@ news_event = {
 			341 = { is_controlled_by = SIR } 
 			46 = { is_controlled_by = SIR } 
 			106 = { is_controlled_by = SIR } 
-			47 = { is_controlled_by = SIR } 
-
+			47 = { is_controlled_by = SIR }
+			107 = { is_controlled_by = SIR }
 		}
 		NOT = { has_global_flag = siren_baerganjiefang }
 	}

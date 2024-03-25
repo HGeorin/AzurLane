@@ -599,6 +599,45 @@ characters={
 			logistics_skill = 2
 		}
 	}
+	BFL_gubixuefu = {
+		name = BFL_gubixuefu
+		portraits={
+			army = {
+				large="gfx/leaders/BFL/gubixuefu.png"
+				small="gfx/interface/ideas/idea_gubixuefu.png"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = army_chief
+			idea_token = gubixuefu
+			traits = { trait_gubixuefu }
+
+			ai_will_do = {
+				factor = 10
+			}
+			available= {
+            	if = { 	limit = { tag = BFL } }
+		    }
+		}
+
+		corps_commander = {
+			visible = { 
+				NOT = { has_character_flag = xiujia_doing } 
+				OR = {
+					NOT = { tag = TAN }
+					is_ai = no
+				}
+			}
+			legacy_id = 05015
+			traits = { skilled_staffer trait_cautious brilliant_strategist winter_specialist xunyang_army }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
 	BFL_aerhangeersike = {
 		name = BFL_aerhangeersike
 		portraits={

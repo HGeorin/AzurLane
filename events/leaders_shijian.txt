@@ -1984,6 +1984,21 @@ unit_leader_event = {
 		}
 		THIS = { unit_leader_event = getzhg_event.2401 }
 	}
+	#古比雪夫
+	option = {
+		name = "银弦的向导兵"
+		trigger = {
+			THIS = {
+				is_character = BFL_gubixuefu
+			}
+		}
+		set_portraits = { 
+			character = THIS
+			army = { large="gfx/leaders/huanzhuang/gubixuefu1.png" } 
+			civilian = { large="gfx/leaders/huanzhuang/gubixuefu1.png" } 
+		}
+		THIS = { unit_leader_event = getzhg_event.2401 }
+	}
 	#长春
 	option = {
 		name = "常服"

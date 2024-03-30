@@ -722,7 +722,7 @@ jiefanglingtu_category = {
 			}
 			modifier = {
 				tag = YUW
-				has_completed_focus = YUW_jiuciweizhiderongren
+				has_completed_focus = YUW_gongfangzhuanhuan
 				add = 10
 			}
 			modifier = {

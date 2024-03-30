@@ -242,10 +242,25 @@ focus = {
 	completion_reward = {
 		add_manpower = -15000
 		hidden_effect = {
-			110 = { add_core_of = HUJ }
-			142 = { add_core_of = HUJ }
-			143 = { add_core_of = HUJ }
-			144 = { add_core_of = HUJ }
+			if = {
+				limit = {
+					SIR = {
+						controls_state = 142
+						controls_state = 110
+						controls_state = 925
+					}
+				}
+				110 = { add_core_of = HUJ }
+				142 = { add_core_of = HUJ }
+				143 = { add_core_of = HUJ }
+				144 = { add_core_of = HUJ }
+				920 = { add_core_of = HUJ }
+				921 = { add_core_of = HUJ }
+				922 = { add_core_of = HUJ }
+				923 = { add_core_of = HUJ }
+				924 = { add_core_of = HUJ }
+				925 = { add_core_of = HUJ }
+			}
 		}
 		if = {
 			limit = {

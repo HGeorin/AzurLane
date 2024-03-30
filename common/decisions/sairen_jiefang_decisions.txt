@@ -745,18 +745,17 @@ jiefanglingtu_category = {
 			modifier = {
 				tag = TIX
 				has_completed_focus = TIX_zhunbeichongfanoulu
-				add = 10
+				add = 15
 			}
-			
 			modifier = {
 				tag = BFL
 				has_completed_focus = BFL_dongougongshi
-				add = 10
+				add = 15
 			}
 			modifier = {
 				tag = HUJ
 				has_completed_focus = HUJ_zhanqianchoubei
-				add = 10
+				add = 15
 			}
 			modifier = {
 				OR = {
@@ -776,25 +775,30 @@ jiefanglingtu_category = {
 					tag = SAD
 				}
 				SIR = {
-					NOT = { controls_state = 64 }
+					NOT = { controls_state = 219 }
+					NOT = { controls_state = 195 }
 				}
 				add = 10
 			}
 			modifier = {
 				tag = BYG
 				has_completed_focus = BYG_xianhuashengkai
-				add = 10
+				add = 15
 			}
 			modifier = {
 				tag = YUW
-				has_completed_focus = YUW_jiuciweizhiderongren
-				add = 10
+				has_completed_focus = YUW_gongfangzhuanhuan
+				add = 15
 			}
 			modifier = {
 				tag = SAD
 				has_completed_focus = SAD_lingxiudeguwu
 				TIX = { has_war_with = SIR }
-				add = 10
+				add = 15
+			}
+			modifier = {
+				SIR = { has_idea = SIR_buff3 }
+				add = 5
 			}
 			modifier = {
 				OR = {
@@ -898,6 +902,14 @@ jiefanglingtu_category = {
 				add = 5
 			}
 			modifier = {
+				tag = BFL
+				BFL = {
+					controls_state = 137
+					controls_state = 230
+				}
+				add = 5
+			}
+			modifier = {
 				SR2 = { has_idea = SIR_buff5 }
 				add = 5
 			}
@@ -945,12 +957,12 @@ jiefanglingtu_category = {
 					has_completed_focus = CHY_duiwaikuozhang
 					has_completed_focus = CHY_richuzhiying
 				}
-				add = 10
+				add = 15
 			}
 			modifier = {
 				tag = DOH
 				has_completed_focus = DOH_jiefangxuanyan	
-				add = 10
+				add = 15
 			}
 			modifier = {
 				tag = TIX
@@ -962,14 +974,8 @@ jiefanglingtu_category = {
 			}
 			modifier = {
 				tag = BFL
-				AND = {
-					BFL = {
-						controls_state = 219
-						controls_state = 398
-					}
-					has_completed_focus = BFL_wulaergongshi
-				}
-				add = 10
+				has_completed_focus = BFL_wulaergongshi
+				add = 15
 			}
 			modifier = {
 				SR3 = { has_idea = SIR_buff5 }

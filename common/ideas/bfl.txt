@@ -305,7 +305,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				army_artillery_attack_factor = 0.2
+				army_artillery_attack_factor = 0.25
 			}
 		}
 		BFL_txkxjdbm = {

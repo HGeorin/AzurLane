@@ -120,6 +120,18 @@ YUW_historical_new_sairen = {
 		YUW_luolinshizi
 		YUW_huangjinbandao
 		YUW_shenglijun
+		YUW_jidonghuazhuangbei
+		YUW_zhuangjiakeji
+		YUW_lujunlilun
+		YUW_yundongzhan
+		YUW_liluntupo
+		YUW_xinshizhuangbei
+		YUW_zhanjian
+		YUW_hangmu
+		YUW_zhanjian
+		YUW_kongjunjianshe
+		YUW_feijiyanjiu
+		YUW_qiangpojueze
 	}
 
 	research = {

@@ -196,7 +196,10 @@ jiefanglingtu_category = {
 			custom_trigger_tooltip = {
 				tooltip = yaoqiuguihuanhexinlingtu_mapdecision_trigger_tooltip
 				FROM = {
-					controller = { NOT = { has_war_with = ROOT } }
+					controller = { 
+						NOT = { has_war_with = ROOT } 
+						is_ai = no
+					}
 				}
 			}
 			is_puppet = NO
@@ -242,6 +245,74 @@ jiefanglingtu_category = {
 			FROM = {
 				controller = { 
 					country_event = { id = azevent.66 hours = 12 }
+				}
+			}
+		}
+	}
+	yaoqiuguihuanhexinlingtu_mapdecision_ai = {
+		
+		icon = lansegantan
+		state_target = yes
+		on_map_mode = map_only
+		target_array = core_states
+		highlight_color_while_active = 1
+		
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+			has_global_flag = MOD_azurlane_sairenzhizai
+			is_ai = yes
+		}
+		available = {
+			
+			custom_trigger_tooltip = {
+				tooltip = yaoqiuguihuanhexinlingtu_mapdecision_trigger_tooltip
+				FROM = {
+					controller = { 
+						NOT = { has_war_with = ROOT } 
+						is_ai = yes
+					}
+				}
+			}
+			is_puppet = NO
+			FROM = {
+				NOT = { is_controlled_by = ROOT }
+			}
+		}
+		
+		target_trigger = {
+			FROM = {
+				always = yes
+			}
+		}
+		
+		visible = {
+			NOT = {
+				has_country_flag = yaoqiuguihuanhexinlingtu_mapdecision_cd
+			}
+			FROM = { 
+				is_core_of = ROOT
+				
+				NOT = { has_state_flag = shouhuihexinlingtu_doing }
+				
+				NOT = { is_controlled_by = ROOT }
+
+				NOT = {
+					OR = {
+						is_controlled_by = SIR
+						is_controlled_by = SR1
+						is_controlled_by = SR2
+						is_controlled_by = SR3
+						is_controlled_by = SR4
+					}	
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {
+				controller = { 
+					country_event = azevent.66
 				}
 			}
 		}
@@ -662,13 +733,7 @@ jiefanglingtu_category = {
 				tooltip = "距上次与塞壬停战已经过去了一段时间（3个月）"
 				NOT = { has_country_flag = zhanzhenglengque }
 			}
-			if = {
-				limit = {
-					is_ai = yes
-					has_global_flag = sirennandu4
-				}
-				date > 1938.7.1
-			}
+			
 		}
 		visible = {
 			NOT = { has_war_with = SIR }
@@ -680,18 +745,17 @@ jiefanglingtu_category = {
 			modifier = {
 				tag = TIX
 				has_completed_focus = TIX_zhunbeichongfanoulu
-				add = 10
+				add = 15
 			}
-			
 			modifier = {
 				tag = BFL
 				has_completed_focus = BFL_dongougongshi
-				add = 10
+				add = 15
 			}
 			modifier = {
 				tag = HUJ
 				has_completed_focus = HUJ_zhanqianchoubei
-				add = 10
+				add = 15
 			}
 			modifier = {
 				OR = {
@@ -711,25 +775,30 @@ jiefanglingtu_category = {
 					tag = SAD
 				}
 				SIR = {
-					NOT = { controls_state = 64 }
+					NOT = { controls_state = 219 }
+					NOT = { controls_state = 195 }
 				}
 				add = 10
 			}
 			modifier = {
 				tag = BYG
 				has_completed_focus = BYG_xianhuashengkai
-				add = 10
+				add = 15
 			}
 			modifier = {
 				tag = YUW
 				has_completed_focus = YUW_gongfangzhuanhuan
-				add = 10
+				add = 15
 			}
 			modifier = {
 				tag = SAD
 				has_completed_focus = SAD_lingxiudeguwu
 				TIX = { has_war_with = SIR }
-				add = 10
+				add = 15
+			}
+			modifier = {
+				SIR = { has_idea = SIR_buff3 }
+				add = 5
 			}
 			modifier = {
 				OR = {
@@ -755,15 +824,9 @@ jiefanglingtu_category = {
 		icon = jian
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = "距上次与塞壬停战已经过去了一段时间（3个月）"
-				NOT = { has_country_flag = zhanzhenglengque }
-			}
-			if = {
-				limit = {
-					is_ai = yes
-					has_global_flag = sirennandu4
-				}
-				date > 1938.7.1
+			tooltip = "距上次与塞壬停战已经过去了一段时间（3个月）"
+			NOT = { has_country_flag = zhanzhenglengque }
+			
 			}
 		}
 		visible = {
@@ -812,15 +875,9 @@ jiefanglingtu_category = {
 		icon = jian
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = "距上次与塞壬停战已经过去了一段时间（3个月）"
-				NOT = { has_country_flag = zhanzhenglengque }
-			}
-			if = {
-				limit = {
-					is_ai = yes
-					has_global_flag = sirennandu4
-				}
-				date > 1938.7.1
+			tooltip = "距上次与塞壬停战已经过去了一段时间（3个月）"
+			NOT = { has_country_flag = zhanzhenglengque }
+			
 			}
 		}
 		visible = {
@@ -841,6 +898,14 @@ jiefanglingtu_category = {
 					NOT = { controls_state = 16 }
 					NOT = { controls_state = 2 }
 					NOT = { controls_state = 52 }
+				}
+				add = 5
+			}
+			modifier = {
+				tag = BFL
+				BFL = {
+					controls_state = 137
+					controls_state = 230
 				}
 				add = 5
 			}
@@ -872,15 +937,9 @@ jiefanglingtu_category = {
 		icon = jian
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = "距上次与塞壬停战已经过去了一段时间（3个月）"
-				NOT = { has_country_flag = zhanzhenglengque }
-			}
-			if = {
-				limit = {
-					is_ai = yes
-					has_global_flag = sirennandu4
-				}
-				date > 1938.7.1
+			tooltip = "距上次与塞壬停战已经过去了一段时间（3个月）"
+			NOT = { has_country_flag = zhanzhenglengque }
+			
 			}
 		}
 		visible = {
@@ -898,28 +957,25 @@ jiefanglingtu_category = {
 					has_completed_focus = CHY_duiwaikuozhang
 					has_completed_focus = CHY_richuzhiying
 				}
-				add = 10
+				add = 15
 			}
 			modifier = {
 				tag = DOH
 				has_completed_focus = DOH_jiefangxuanyan	
-				add = 10
+				add = 15
 			}
 			modifier = {
 				tag = TIX
-				SIR = {
-					NOT = { controls_state = 219 }
-					NOT = { controls_state = 398 }
-				}	
+				TIX = {
+					controls_state = 219
+					controls_state = 398
+				}
 				add = 10
 			}
 			modifier = {
 				tag = BFL
-				SIR = {
-					NOT = { controls_state = 219 }
-					NOT = { controls_state = 398 }
-				}
-				add = 10
+				has_completed_focus = BFL_wulaergongshi
+				add = 15
 			}
 			modifier = {
 				SR3 = { has_idea = SIR_buff5 }
@@ -949,15 +1005,9 @@ jiefanglingtu_category = {
 		icon = jian
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = "距上次与塞壬停战已经过去了一段时间（3个月）"
-				NOT = { has_country_flag = zhanzhenglengque }
-			}
-			if = {
-				limit = {
-					is_ai = yes
-					has_global_flag = sirennandu4
-				}
-				date > 1938.7.1
+			tooltip = "距上次与塞壬停战已经过去了一段时间（3个月）"
+			NOT = { has_country_flag = zhanzhenglengque }
+			
 			}
 		}
 		visible = {

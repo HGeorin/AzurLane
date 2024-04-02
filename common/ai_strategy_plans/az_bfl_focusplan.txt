@@ -143,19 +143,20 @@ BFL_historical_sairenzhizai = {
 		BFL_dulizizhu
 		BFL_zhongshizhuangbei
 		BFL_fazhanbubing
-		BFL_jungongchang
+		BFL_chongjianjungong
+		BFL_jinjiqiangpaoshengchan
+		BFL_jiejinanmin
 		BFL_jingweizhixin
-		BFL_beijitanxiandui
-		BFL_beijiyanjiuyuan
-		BFL_jitizhuyi
-		BFL_yingxiongzhuyi
 		BFL_shiyingyanhan
 		#begin war with SIR
 		BFL_dongougongshi
 		BFL_renminzhanzheng
 		BFL_wanchengdiergewunianjihua
 		BFL_xiayigewunianjihua
+		BFL_jungongchang
 		BFL_moermansike
+		BFL_beijitanxiandui
+		BFL_beijiyanjiuyuan
 		BFL_qishuichang
 		BFL_jinjiuling
 		BFL_jihuangwenti
@@ -167,6 +168,8 @@ BFL_historical_sairenzhizai = {
 		#war with SR3(Asia SR)
 		BFL_mosike
 		BFL_lieninggele
+		BFL_jitizhuyi
+		BFL_yingxiongzhuyi
 		BFL_junduizhengwei
 		BFL_futejiajiuchang
 		BFL_wulaergongshi
@@ -185,6 +188,7 @@ BFL_historical_sairenzhizai = {
 		BFL_fazhanzhuangjia
 		BFL_goumaitiexuetuzhi
 		BFL_qiequtiexuetuzhi
+		BFL_xiboliyagongyejianshe
 		BFL_t34shengchan
 		BFL_gangtiehongliu
 		BFL_wulaerdakaifa

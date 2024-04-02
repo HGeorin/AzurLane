@@ -198,7 +198,6 @@ jiefanglingtu_category = {
 				FROM = {
 					controller = { 
 						NOT = { has_war_with = ROOT } 
-						is_ai = no
 					}
 				}
 			}

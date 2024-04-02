@@ -89,9 +89,9 @@
  steal_donglizhuangjiatech_desc:"买是不可能买的，这辈子不可能买的，只能靠偷才维持得了生活。"
  YUW_jupaotech:"鸢尾特殊科技：巨炮"
  YUW_jupaotech_desc:"“鸢尾的巨砲是究極防守武器，能發射長程破壞力驚人的炮彈。”——某科学家对巨炮的评价。\n我们的巨炮拥有强大的威力，并且可以发射高爆弹和穿甲弹以及防空炮弹，可攻可守。"
- buy_donglizhuangjiatech:"购买白鹰动力装甲科技"
- buy_donglizhuangjiatech_desc:"听说白鹰通过某种神秘方式获得了超强的动力装甲，我们可以尝试购买她们的动力装甲蓝图。"
- steal_donglizhuangjiatech:"偷窃白鹰动力装甲科技"
+ buy_jupaotech:"购买鸢尾巨炮科技"
+ buy_donglizhuangjiatech_desc:"听说白鹰通过某种神秘方式获得了超强的巨炮，我们可以尝试购买她们的巨炮蓝图。"
+ steal_donglizhuangjiatech:"偷窃鸢尾巨炮科技"
  steal_donglizhuangjiatech_desc:"买是不可能买的，这辈子不可能买的，只能靠偷才维持得了生活。"
 
  keyanxiezhu_quzhu_1:"请求科研协助-基础型陆用驱逐舰炮"

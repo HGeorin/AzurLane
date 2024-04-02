@@ -5,7 +5,8 @@ state = {
 	manpower = 45819
 
 	history = {
-		owner = SIR
+		owner = TIX
+		add_core_of = TIX
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

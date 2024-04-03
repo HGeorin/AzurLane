@@ -109,6 +109,126 @@ BFL_historical = {
 	
 }
 
+BFL_historical_sairenzhizai = {
+	name = "BFL_historical"
+	desc = "BFL_historical_desc"
+
+	allowed = {
+		original_tag = BFL
+	}
+	enable = {
+	has_global_flag = MOD_azurlane_sairenzhizai
+		or = {
+			is_historical_focus_on = yes
+			
+			has_game_rule = {
+				rule = BFL_ai_behavior
+				option = BFL_historical_focus
+			}
+		}
+	}
+	abort = {
+		has_completed_focus = BFL_jingliangdedaxingjian
+	}
+
+	ai_national_focuses = {
+	    #before war
+		BFL_beiliandejianshizhe
+		BFL_womendecimu
+		BFL_qiangyingluxian
+        BFL_lujunjianshe
+		BFL_zhongshijiaoyu
+		BFL_yinyingzhongdeyanjing
+		BFL_chongxinshenshizishendiwei
+		BFL_dulizizhu
+		BFL_zhongshizhuangbei
+		BFL_fazhanbubing
+		BFL_chongjianjungong
+		BFL_jinjiqiangpaoshengchan
+		BFL_jiejinanmin
+		BFL_jingweizhixin
+		BFL_shiyingyanhan
+		#begin war with SIR
+		BFL_dongougongshi
+		BFL_renminzhanzheng
+		BFL_wanchengdiergewunianjihua
+		BFL_xiayigewunianjihua
+		BFL_jungongchang
+		BFL_moermansike
+		BFL_beijitanxiandui
+		BFL_beijiyanjiuyuan
+		BFL_qishuichang
+		BFL_jinjiuling
+		BFL_jihuangwenti
+		BFL_zhongzhiyumi
+		BFL_jinkouliangshi
+		BFL_buqiangshengchan
+		BFL_gongrenfuli
+		BFL_mingongjianshe
+		#war with SR3(Asia SR)
+		BFL_mosike
+		BFL_lieninggele
+		BFL_jitizhuyi
+		BFL_yingxiongzhuyi
+		BFL_junduizhengwei
+		BFL_futejiajiuchang
+		BFL_wulaergongshi
+		BFL_huopaodezhongchui
+		BFL_baohefugai
+		BFL_beijikeji
+		BFL_beijifadongji
+		BFL_beijijianzhuang
+		BFL_beijiwurenji
+		BFL_kejichuangxin
+		BFL_fazhanjidonghua
+		BFL_yundongzhan
+		BFL_zongshenzuozhan
+		#mid
+		BFL_zhanshuyanjiu
+		BFL_fazhanzhuangjia
+		BFL_goumaitiexuetuzhi
+		BFL_qiequtiexuetuzhi
+		BFL_xiboliyagongyejianshe
+		BFL_t34shengchan
+		BFL_gangtiehongliu
+		BFL_wulaerdakaifa
+		BFL_zhiduzixin
+		BFL_guojiyundong
+		#navy&airforce
+		BFL_zhongshihaijun
+		BFL_xiaoquzhujian
+		BFL_xunyangjian
+		BFL_zhanliedajieda
+		BFL_hangmumama
+		BFL_kongjunjianshe
+		BFL_liluntupo
+		BFL_cezhongduidizhiyuan
+		BFL_hongzhadashi
+		BFL_xianyuchang
+		BFL_buyuchuanchuanwu
+		BFL_lieninggelezaochuanchang
+		BFL_mosikegongyequn
+		BFL_jianduizhiliang
+		BFL_chaoqiansiwei
+		BFL_jingliangdedaxingjian
+	}
+
+	research = {
+		cat_medium_armor = 50.0	
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	
+}
+
 BFL_zouzibenzhuyidaolu = {
 	name = "BFL_zouzibenzhuyidaolu"
 	desc = "BFL_zouzibenzhuyidaolu_desc"

@@ -1303,10 +1303,6 @@ operations = {
 								owns_state = 446
 								owns_state = 453
 							}
-							EGY = {
-								owns_state = 446
-								owns_state = 453
-							}
 						}
 					}
 					add_war_support = -0.05
@@ -1326,7 +1322,6 @@ operations = {
 				}
 				has_war = yes
 				NOT = { tag = HUJ }
-				NOT = { tag = EGY }
 			}
 			modifier = {
 				add = 51 # Somewhat important if the baddies are coming
@@ -1354,7 +1349,6 @@ operations = {
 				}
 				has_war = yes
 				is_in_faction_with = HUJ
-				is_in_faction_with = EGY
 			}
 		}
 	}

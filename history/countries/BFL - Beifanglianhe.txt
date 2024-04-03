@@ -352,6 +352,14 @@ recruit_character = BFL_kalangshitade
 recruit_character = BFL_jifu
 recruit_character = BFL_fuerjia
 recruit_character = BFL_qikaluofu
+recruit_character = BFL_gubixuefu
+recruit_character = BFL_lingmin
+recruit_character = BFL_huoli
+recruit_character = BFL_saiwasituoboer
+recruit_character = BFL_boertawa
+recruit_character = BFL_xiongmeng
+recruit_character = BFL_fuluosiluofu
+recruit_character = BFL_kuersike
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###

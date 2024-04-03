@@ -2411,8 +2411,12 @@ focus_tree = {
 		relative_position_id = YUC_shijiegeming
 		prerequisite = { focus = YUC_shijiegeming }
 		cost = 5
+		bypass = {
+			is_in_faction_with = BFL
+		}
 		available = {
-				has_government = communism
+			is_puppet = no
+			has_government = communism
 		}
 		ai_will_do = {
 			factor = 60
@@ -2437,7 +2441,7 @@ focus_tree = {
 		prerequisite = { focus = YUC_gongchanguoji }
 		cost = 5
 		available = {
-				has_government = communism
+			has_government = communism
 		}
 		ai_will_do = {
 			factor = 60
@@ -2543,9 +2547,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUC_sipomianju
 		prerequisite = { focus = YUC_xianfazhiren }
-		prerequisite = {  focus = YUC_sipomianju}
+		prerequisite = { focus = YUC_sipomianju}
 		cost = 15
 		available = {
+			is_puppet = no
 			has_army_manpower = { size > 4999999 }
 			not = {is_in_faction_with = TIX is_in_faction_with = SAD is_in_faction_with = BYG is_in_faction_with = HUJ is_in_faction_with = CHY is_in_faction_with = BLI}
 		}

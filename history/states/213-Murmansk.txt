@@ -2,8 +2,8 @@
 state={
 	id=213
 	name="STATE_213"
-	manpower = 275751
-	state_category = rural
+	manpower = 2875751
+	state_category = city
 	resources={
 		steel=14 # was: 28
 		chromium=12 # was: 24
@@ -11,6 +11,7 @@ state={
 
 	history={
 		owner = BFL
+		add_core_of = BFL
 		victory_points = {
 			3134 5 
 		}

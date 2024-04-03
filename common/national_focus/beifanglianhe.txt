@@ -84,7 +84,7 @@
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			213 = {
-				add_extra_state_shared_building_slots = 3
+				set_state_category = large_city
 				add_building_construction = {
 					type = industrial_complex
 					level = 3
@@ -121,7 +121,7 @@
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			213 = {
-				add_extra_state_shared_building_slots = 5
+				set_state_category = large_city
 				add_building_construction = {
 					type = industrial_complex
 					level = 4
@@ -227,7 +227,7 @@
 		relative_position_id = BFL_beijikeji
 		x = -2
 		y = 1
-		cost = 7
+		cost = 6
 
 		ai_will_do = {
 			factor = 7
@@ -245,7 +245,7 @@
 		relative_position_id = BFL_beijikeji
 		x = 0
 		y = 1
-		cost = 7
+		cost = 6
 
 		ai_will_do = {
 			factor = 7
@@ -263,7 +263,7 @@
 		relative_position_id = BFL_beijikeji
 		x = 2
 		y = 1
-		cost = 7
+		cost = 6
 
 		ai_will_do = {
 			factor = 7
@@ -311,6 +311,22 @@
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -377,6 +393,14 @@
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -385,10 +409,18 @@
 				}
 			}
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -440,7 +472,7 @@
 		y = 1
 		prerequisite = { focus = BFL_xiayigewunianjihua }
 		relative_position_id = BFL_xiayigewunianjihua
-		cost = 7
+		cost = 4
 
 		ai_will_do = {
 			factor = 30
@@ -493,7 +525,7 @@
 		y = 1
 		prerequisite = { focus = BFL_xiayigewunianjihua }
 		relative_position_id = BFL_xiayigewunianjihua
-		cost = 8
+		cost = 6
 
 		ai_will_do = {
 			factor = 5
@@ -1692,7 +1724,7 @@
 	focus = {  
 		id = BFL_beiliandejianshizhe
 		icon = GFX_focus_luoxiya2
-		x = 38
+		x = 50
 		y = 0
 		
 		cost = 10
@@ -1711,6 +1743,12 @@
 				add_unit_leader_trait = politically_connected
 				gain_xp = 600
 			}
+		}
+		offset = {
+			trigger = {
+				has_global_flag = MOD_azurlane_sairenzhizai
+			}
+			x = -7
 		}
 	}
 	focus = {  
@@ -1796,7 +1834,7 @@
 		y = 1
 		prerequisite = { focus = BFL_beiliandejianshizhe }
 		relative_position_id = BFL_beiliandejianshizhe
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 40
@@ -1815,7 +1853,7 @@
 		y = 1
 		prerequisite = { focus = BFL_womendecimu }
 		relative_position_id = BFL_womendecimu
-		cost = 3
+		cost = 7
 
 		ai_will_do = {
 			factor = 40
@@ -1825,16 +1863,98 @@
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 6000
+				amount = 5000
 			}
 			add_equipment_to_stockpile = {
 				type = support_equipment
-				amount = 500
+				amount = 750
 			}
 			hidden_effect = { news_event = aznews.33 }
 		}
 	}
 #sairenmod
+	focus = {  
+		id = BFL_chongjianjungong
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -8
+		y = 1
+		prerequisite = { focus = BFL_qiangyingluxian }
+		relative_position_id = BFL_qiangyingluxian
+		cost = 7
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {  
+		id = BFL_jiejinanmin
+		icon = GFX_focus_generic_concessions
+		x = -1
+		y = 1
+		prerequisite = { focus = BFL_chongjianjungong }
+		relative_position_id = BFL_chongjianjungong
+		cost = 3
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_manpower = 150000
+			}
+			random_owned_controlled_state = {
+				add_manpower = 150000
+			}
+			random_owned_controlled_state = {
+				add_manpower = 150000
+			}
+			add_timed_idea = {
+				idea = BFL_jjnm
+				days = 180
+			}
+		}
+	}
+	focus = {  
+		id = BFL_jinjiqiangpaoshengchan
+		icon = GFX_focus_focus_fra_maquis
+		x = 1
+		y = 1
+		prerequisite = { focus = BFL_chongjianjungong }
+		relative_position_id = BFL_chongjianjungong
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 20000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 2000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 2500
+			}
+		}
+	}
+
 	focus = {  
 		id = BFL_dongougongshi
 		icon = GFX_goal_generic_major_war
@@ -1862,29 +1982,51 @@
 			custom_effect_tooltip = "获得东欧部分领土核心"
 			hidden_effect = {
 				146 = { add_core_of = BFL }
-				216 = { add_core_of = BFL }
-				351 = { add_core_of = BFL }
+				194 = { add_core_of = BFL }
 				195 = { add_core_of = BFL }
-				244 = { add_core_of = BFL }
-				264 = { add_core_of = BFL }
-				248 = { add_core_of = BFL }
-				253 = { add_core_of = BFL }
-				219 = { add_core_of = BFL }
-				252 = { add_core_of = BFL }
-				400 = { add_core_of = BFL }
-				397 = { add_core_of = BFL }
-				262 = { add_core_of = BFL }
-				263 = { add_core_of = BFL }
-				246 = { add_core_of = BFL }
+				204 = { add_core_of = BFL }
+				205 = { add_core_of = BFL }
+				206 = { add_core_of = BFL }
+				207 = { add_core_of = BFL }
+				208 = { add_core_of = BFL }
 				209 = { add_core_of = BFL }
 				210 = { add_core_of = BFL }
-				242 = { add_core_of = BFL }
-				247 = { add_core_of = BFL }
-				205 = { add_core_of = BFL }
-				243 = { add_core_of = BFL }
+				216 = { add_core_of = BFL }
+				219 = { add_core_of = BFL }
+				220 = { add_core_of = BFL }
+				222 = { add_core_of = BFL }
 				223 = { add_core_of = BFL }
+				224 = { add_core_of = BFL }
+				240 = { add_core_of = BFL }
+				241 = { add_core_of = BFL }
+				242 = { add_core_of = BFL }
+				243 = { add_core_of = BFL }
+				244 = { add_core_of = BFL }
+				246 = { add_core_of = BFL }
+				247 = { add_core_of = BFL }
+				248 = { add_core_of = BFL }
+				249 = { add_core_of = BFL }
+				250 = { add_core_of = BFL }
+				252 = { add_core_of = BFL }
+				253 = { add_core_of = BFL }
 				254 = { add_core_of = BFL }
+				255 = { add_core_of = BFL }
+				256 = { add_core_of = BFL }
+				257 = { add_core_of = BFL }
+				258 = { add_core_of = BFL }
+				260 = { add_core_of = BFL }
+				262 = { add_core_of = BFL }
+				263 = { add_core_of = BFL }
+				264 = { add_core_of = BFL }
+				351 = { add_core_of = BFL }
+				397 = { add_core_of = BFL }
+				398 = { add_core_of = BFL }
+				399 = { add_core_of = BFL }
+				400 = { add_core_of = BFL }
+				581 = { add_core_of = BFL }
+				651 = { add_core_of = BFL }
 				825 = { add_core_of = BFL }
+				833 = { add_core_of = BFL }
 				879 = { add_core_of = BFL }
 				880 = { add_core_of = BFL }
 			}
@@ -1946,6 +2088,7 @@
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			195 = {
+				set_state_category = megalopolis
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
@@ -2013,12 +2156,18 @@
 					instant_build = yes
 				}
 			}
+			223 = {
+				set_state_category = city
+			}
+			254 = {
+				set_state_category = city
+			}
 		}
 	}
 	focus = {  
 		id = BFL_wulaergongshi
 		icon = GFX_goal_generic_major_war
-		x = 4
+		x = 3
 		y = 1
 		prerequisite = { focus = BFL_qiangyingluxian }
 		relative_position_id = BFL_qiangyingluxian
@@ -2029,34 +2178,51 @@
 		ai_will_do = {
 			factor = 9
 		}
+		available = {
+			controls_state = 573
+			controls_state = 581
+		}
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			custom_effect_tooltip = "获得乌拉尔附近部分领土核心"
 			hidden_effect = {
-				581 = { add_core_of = BFL }
+				40 = { add_core_of = BFL }
+				569 = { add_core_of = BFL }
+				570 = { add_core_of = BFL }
+				571 = { add_core_of = BFL }
 				573 = { add_core_of = BFL }
+				577 = { add_core_of = BFL }
+				578 = { add_core_of = BFL }
 				582 = { add_core_of = BFL }
 				402 = { add_core_of = BFL }
+				403 = { add_core_of = BFL }
+				404 = { add_core_of = BFL }
 				398 = { add_core_of = BFL }
 				399 = { add_core_of = BFL }
 				651 = { add_core_of = BFL }
 				652 = { add_core_of = BFL }
+				654 = { add_core_of = BFL }
 				407 = { add_core_of = BFL }
 				406 = { add_core_of = BFL }
 				251 = { add_core_of = BFL }
 				579 = { add_core_of = BFL }
 				580 = { add_core_of = BFL }
+				588 = { add_core_of = BFL }
+				590 = { add_core_of = BFL }
+				881 = { add_core_of = BFL }
 				653 = { add_core_of = BFL }
 				572 = { add_core_of = BFL }
 				583 = { add_core_of = BFL }
+				824 = { add_core_of = BFL }
+				882 = { add_core_of = BFL }
 			}
 		}
 	}
 	focus = {  
 		id = BFL_wulaerdakaifa
 		icon = GFX_goal_generic_construction
-		x = 0
+		x = 2
 		y = 1
 		prerequisite = { focus = BFL_wulaergongshi }
 		relative_position_id = BFL_wulaergongshi
@@ -2096,6 +2262,145 @@
 			}
 		}
 	}
+	focus = {
+		id = BFL_xiboliyagongyejianshe
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = BFL_wulaergongshi }
+		relative_position_id = BFL_wulaergongshi
+		available = {
+			has_completed_focus = BFL_xiayigewunianjihua
+			num_of_factories > 200
+			controls_state = 403
+			controls_state = 571
+			controls_state = 572
+			controls_state = 582
+			controls_state = 653
+			controls_state = 583
+		}
+		completion_reward = {
+			custom_effect_tooltip = "西伯利亚的部分地块将获得地区类型升级，同时增加军工厂和民用工厂。"
+			hidden_effect = {
+			403 = {
+				set_state_category = town
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			571 = {
+				set_state_category = large_town
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			572 = {
+				set_state_category = large_town
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			582 = {
+				set_state_category = town
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			653 = {
+				set_state_category = large_city
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			583 = {
+				set_state_category = town
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			}
+		}
+	}
+
 	focus = {  
 		id = BFL_zhanshuhuanjia
 		icon = GFX_focus_SOV_third_rome
@@ -3586,10 +3891,10 @@
 	focus = {  
 		id = BFL_xiangyouzhuan
 		icon = GFX_goal_generic_war_with_comintern
-		x = 8
+		x = 11
 		y = 0
-		relative_position_id = BFL_12
-		mutually_exclusive = { focus = BFL_12 }
+		relative_position_id = BFL_beiliandejianshizhe
+		mutually_exclusive = { focus = BFL_beiliandejianshizhe }
 		available = {
 			not = { has_completed_focus = BFL_kongjunjianshe }
 			not = { has_completed_focus = BFL_lujunjianshe }

@@ -288,3 +288,22 @@ YUW_COL_01 =
 	# It's okay to have gaps in numbering.
 	
 }
+
+YUW_SMALL_01 = 
+{
+	name = "鸢尾小编制步兵师"
+
+	for_countries = { YUW }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { YUW_INF_01 }
+
+	fallback_name = "第%d小编制步兵师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+}

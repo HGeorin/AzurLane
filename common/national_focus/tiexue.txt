@@ -126,9 +126,9 @@ focus = {
 	completion_reward = {
 		custom_effect_tooltip = "德意志地区成为我们的核心领土"	
 		hidden_effect = {
-			763 = { add_core_of = TIX }
+			4 = { add_core_of = TIX }
 			5 = { add_core_of = TIX }
-			99 = { add_core_of = TIX }
+			42 = { add_core_of = TIX }
 			50 = { add_core_of = TIX }
 			51 = { add_core_of = TIX }
 			52 = { add_core_of = TIX }
@@ -148,11 +148,15 @@ focus = {
 			66 = { add_core_of = TIX }
 			67 = { add_core_of = TIX }
 			68 = { add_core_of = TIX }
-			85 = { add_core_of = TIX }
-			42 = { add_core_of = TIX }
-			152 = { add_core_of = TIX }
-			4 = { add_core_of = TIX }
 			69 = { add_core_of = TIX }
+			85 = { add_core_of = TIX }
+			86 = { add_core_of = TIX }
+			99 = { add_core_of = TIX }
+			152 = { add_core_of = TIX }
+			153 = { add_core_of = TIX }
+			763 = { add_core_of = TIX }
+			807 = { add_core_of = TIX }
+			848 = { add_core_of = TIX }
 			909 = { add_core_of = TIX }
 			912 = { add_core_of = TIX }
 		}

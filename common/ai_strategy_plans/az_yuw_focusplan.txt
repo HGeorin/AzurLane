@@ -8,7 +8,7 @@ YUW_historical_new = {
 	enable = {
 		or = {
 			is_historical_focus_on = yes	#新版本鸢尾历史国策
-			
+			has_global_flag = MOD_azurlane_tianjiangjianniang
 			has_game_rule = {
 				rule = YUW_ai_behavior
 				option = YUW_historical_focus_new
@@ -48,6 +48,90 @@ YUW_historical_new = {
 		YUW_ouzhouxiongji
 		YUW_xinyang
 		YUW_yongwangzhiqian
+	}
+
+	research = {
+		cat_medium_armor = 50.0
+		cat_mechanized_equipment = 50.0
+		infantry_weapons = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+YUW_historical_new_sairen = {
+	name = "YUW_historical_new"
+	desc = "YUW_historical_new_desc"
+
+	allowed = {
+		original_tag = YUW
+	}
+	enable = {
+		or = {
+			has_global_flag = MOD_azurlane_sairenzhizai
+			is_historical_focus_on = yes	#新版本鸢尾历史国策
+			has_game_rule = {
+				rule = YUW_ai_behavior
+				option = YUW_historical_focus_new
+			}
+		}
+	}
+	abort = {
+		has_completed_focus = YUW_yongwangzhiqian
+	}
+
+	ai_national_focuses = {
+		YUW_yifengmixin
+		YUW_xianshizhengzhi
+		YUW_shiyejiuji
+		YUW_gongrenquanyifaan
+		YUW_ziyoumaoyigaige
+		YUW_caiyuangungun
+		YUW_jienagcdr
+		YUW_zaiminzhuqizhixiatuanjie
+		YUW_zengqianghongsexuanchuan
+		YUW_bizui
+		YUW_jiuciweizhiderongren
+		YUW_jichujianshe
+		YUW_shutonghangxian
+		YUW_qingjiaohaidao
+		YUW_chongzhengjunbei
+		YUW_zhudaojianshe
+		YUW_jungongchang
+		YUW_haijunweihu
+		YUW_lujunzhuangbei
+		YUW_gongfangzhuanhuan
+		YUW_renminzhenxian
+		YUW_ouzhouxiongji
+		YUW_xinyang
+		YUW_yongwangzhiqian
+		YUW_zhongcheng
+		YUW_zhanluoshengxiang
+		YUW_luolinshizi
+		YUW_huangjinbandao
+		YUW_shenglijun
+		YUW_jidonghuazhuangbei
+		YUW_zhuangjiakeji
+		YUW_lujunlilun
+		YUW_yundongzhan
+		YUW_liluntupo
+		YUW_xinshizhuangbei
+		YUW_zhanjian
+		YUW_hangmu
+		YUW_zhanjian
+		YUW_kongjunjianshe
+		YUW_feijiyanjiu
+		YUW_qiangpojueze
 	}
 
 	research = {

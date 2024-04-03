@@ -234,6 +234,12 @@ focus_tree = {
 		prerequisite = { focus = YUW_bizui }
 		prerequisite = { focus = YUW_zengqianghongsexuanchuan }
 
+		available = {
+			not = {
+				is_in_faction_with = SIR
+			}
+		}
+
 		ai_will_do = {
 			factor = 100
 		}
@@ -3691,8 +3697,10 @@ focus_tree = {
 					785 = { add_core_of = YUW }
 					29 = { add_core_of = YUW }
 					28 = { add_core_of = YUW }
+					851 = { add_core_of = YUW }
+					806 = { add_core_of = YUW }
 					transfer_state = 21
-					transfer_state = 22
+					transfer_state = 851
 				}
 			}
 		}
